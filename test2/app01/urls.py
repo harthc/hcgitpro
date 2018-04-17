@@ -11,3 +11,5 @@ urlpatterns = [
     url(r'select', views.select),
     url(r"sb$", Sb.as_view()),
 ]
+
+# SB
