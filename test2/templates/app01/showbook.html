@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书</title>
+</head>
+<body>
+<h2>收藏的图书</h2>
+<h3><a href="/add">增加</a></h3>
+<ul>
+    {% for book in books %}
+
+        <li><a> {{ book.title }}</a>
+            <a href='/delete/{{ book.id }}'>删除</a>
+        </li>
+
+    {% empty %}
+    {% endfor %}
+</ul>
+</body>
+</html>
